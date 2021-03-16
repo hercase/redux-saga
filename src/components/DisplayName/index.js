@@ -1,9 +1,8 @@
+import { useSelector } from "react-redux";
 import "./index.scss";
 
 export const DisplayName = () => {
-  return (
-    <div className="display-name">
-      <p className="display-name__title">Nombre</p>
-    </div>
-  );
+  const name = useSelector((state) => state.name);
+
+  return <p className="display-name">{name}</p>;
 };

@@ -1,10 +1,14 @@
+import { ChangeName } from "./components/ChangeName";
 import { DisplayName } from "./components/DisplayName";
 import "./sass/main.scss";
 
 export default function App() {
   return (
     <div className="App">
-      <DisplayName />
+      <div className="container">
+        <DisplayName />
+        <ChangeName />
+      </div>
     </div>
   );
 }
