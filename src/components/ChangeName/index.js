@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { changeName } from "../../redux/actions";
+import { helloSaga } from "../../redux/sagas";
 import "./index.scss";
 
 export const ChangeName = () => {
